@@ -108,12 +108,21 @@
     .title-01 {
         font-size: 35px;
     }
-
+    .title-02 {
+        font-size: 30px;
+       
+        margin-bottom: 5px;
+    }
+    .education .education-box h3 {
+      
+        font-size: 20px;
+    }
     .content-body {
         padding: 20px 20px 0 20px;
     }
     .contact-us .contact-us-row {
         flex-wrap: wrap;
+        gap:20px;
     }
     .contact-us .contact-us-col {
         width: 100%;
@@ -136,8 +145,7 @@
 
 
 
-    /* =========
-    ========= */
+  
 
 
     .explore {
@@ -188,6 +196,19 @@
     .explore-col{
         text-align: center;
     }
-
+    .contact-us form {
+        width: 100%;
+        max-width: 100%;
+        
+    }
+    .skill {
+        margin-bottom: 50px;
+    }
+    .contact-us {
+        margin-bottom: 20px;
+    }
+    .education {
+        margin-bottom: 50px;
+    }
 
 }
