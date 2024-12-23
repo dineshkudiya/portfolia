@@ -210,5 +210,22 @@
     .education {
         margin-bottom: 50px;
     }
-
+    footer .footer-row {
+        display: flex
+    ;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:10px;
+        
+    }
+    footer .footer-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    footer p {
+     
+        text-align:center;
+    }
 }
