@@ -381,19 +381,19 @@
                   <section class="contact-us" id="contact-us">
                      <div class="contact-us-row">
                         <div class="contact-us-col">
-                           <form action="">
+                           <form action="" name="contact-form" method="POST" data-netlify="true">
                               <div class="form-group">
-                                 <input type="text" class="name" placeholder="Full Name">
+                                 <input type="text" class="name" name="name" placeholder="Full Name">
                               </div>
                               <div class="form-group">
-                                 <input type="text" class="name" placeholder="Email">
+                                 <input type="text" class="email" name="email" placeholder="Email">
                               </div>
-                              <div class="form-group">
+                              <!-- <div class="form-group">
                                  <input type="text" class="name" placeholder="Phone Number">
                               </div>
                               <div class="form-group">
                                  <textarea name="" id="" rows="7" placeholder="Type Your Message"></textarea>
-                              </div>
+                              </div> -->
                               <div class="form-group">
                                  <input type="submit" value="Send Message" class="submit">
                               </div>
@@ -434,6 +434,28 @@
                         </div>
                      </div>
                   </section>
+
+                  <form name="contact" method="POST" data-netlify="true">
+                     <input type="hidden" name="form-name" value="contact">
+                     <p>
+                       <label for="name">Name:</label>
+                       <input type="text" id="name" name="name" required>
+                     </p>
+                     <p>
+                       <label for="email">Email:</label>
+                       <input type="email" id="email" name="email" required>
+                     </p>
+                     <p>
+                       <label for="message">Message:</label>
+                       <textarea id="message" name="message" rows="4" required></textarea>
+                     </p>
+                     <p style="display:none">
+                       <label>Don’t fill this out: <input name="bot-field"></label>
+                     </p>
+                     <p>
+                       <button type="submit">Submit</button>
+                     </p>
+                   </form>
 
                   <footer>
                      <div class="footer-row">
