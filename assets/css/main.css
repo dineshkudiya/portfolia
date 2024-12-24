@@ -3,6 +3,10 @@
 
 /* ============================== Global Styles ==================================*/
  :root {
+    --primary:#4ba4db;
+    --white:#ffffff;
+    --light-dark:#2b2b35;
+    --dark:#20202a;
 }
 /* ============================== Reset style ============================== */
  * {
@@ -18,6 +22,7 @@
 }
  ul, ol {
      list-style: none;
+    
 }
  a {
      text-decoration: none;
@@ -79,7 +84,7 @@
   
 
   ::-webkit-scrollbar-track {
-    background:#2b2b35; 
+    background:var(--light-dark); 
   }
    
 
@@ -107,23 +112,23 @@
  .title-01{
      font-size: 45px;
      font-weight: 600;
-     color: #fafafc;
+     color: var(--white);
 }
  .title-02 {
      font-size: 45px;
      font-weight: 600;
-     color: #fafafc;
+     color: var(--white);
      margin-bottom: 5px;
 }
  .title-03{
      font-size: 20px;
      font-weight: 400;
-     color: #fafafc;
+     color: var(--white);
 }
  .sub-title-01{
      font-size: 19px;
      font-weight: 400;
-     color:#fafafc;
+     color:var(--white);
 }
  .sub-title-02{
      font-size: 18px;
@@ -143,8 +148,8 @@
 }
  .btn{
      padding: 15px 50px;
-     background:#4ba4db;
-     color:#ffffff;
+     background:var(--primary);
+     color:var(--white);
      font-size: 18px;
      display:inline-block;
 }
@@ -160,7 +165,7 @@
      height:100%;
      height: 100vh;
      position: relative;
-     background: #20202a;
+     background: var(--dark);
      box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
      overflow: auto;
      
@@ -203,7 +208,7 @@
      margin-bottom: 20px;
 }
  .sidebar .information li i {
-     color: #ffffff;
+     color: var(--white);
      margin-right: 10px;
 }
  .sidebar .information .title-03 {
@@ -216,7 +221,7 @@
 }
  .sidebar .languages-heading {
      margin-bottom: 10px;
-     color: #ffffff;
+     color: var(--white);
      font-size: 20px;
      font-weight: 400;
 }
@@ -254,10 +259,10 @@
      transition: all 0.3s ease;
 }
  .sidebar .download:hover {
-     color: #ffffff;
+     color: var(--white);
 }
  .sidebar .social-icon i {
-     color: #ffffffff;
+     color: var(--white)ff;
 }
 
  .sidebar-content {
@@ -265,7 +270,7 @@
     
 }
  .sidebar-content .fa-ellipsis-vertical {
-     color: #ffffff;
+     color: var(--white);
      position: absolute;
      top: 20px;
      right: 20px;
@@ -277,7 +282,7 @@
  .right {
      width: 100%;
      max-width: 70px;
-     background: #20202a;
+     background: var(--dark);
      position: relative;
      display: flex;
      flex-direction: column;
@@ -286,7 +291,7 @@
      z-index: 1000;
 }
  .right .fa-bars {
-     color: #ffffff;
+     color: var(--white);
      margin-bottom: 100px;
 }
  .right ul {
@@ -300,7 +305,7 @@
      margin-bottom: 10px;
 }
  .right ul li a {
-     color: #ffffff;
+     color: var(--white);
 }
  .right.right-back {
      width: 100%;
@@ -308,7 +313,7 @@
      position: absolute;
      top: 0;
      right: 0;
-     background: #20202a;
+     background: var(--dark);
      height: 100vh;
 }
 
@@ -336,7 +341,7 @@
     left: 0;
     width: 100%;
     height: 70px;
-    background: #20202a;
+    background: var(--dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -344,7 +349,7 @@
     display: none;
 }
 .content-header .fa-bars {
-    color: #ffffff;
+    color: var(--white);
     display: none;
 }
 .content-body {
@@ -397,11 +402,11 @@
      background:transparent;
      border:1px solid gray;
      height:50px;
-     color:#ffffff;
+     color:var(--white);
      padding-left: 20px;
 }
  .contact-us ::placeholder{
-     color:#ffffff;
+     color:var(--white);
 }
  .contact-us input:focus{
      border:1px solid gray;
@@ -419,13 +424,13 @@
 }
  .contact-us .submit{
      border:none;
-     background: #4ba4db;
+     background: var(--primary);
      font-size: 16px;
      letter-spacing: 1.3px;
      cursor:pointer;
 }
  .contact-us .contact-us .title-02{
-     color:#ffffff;
+     color:var(--white);
 }
  .contact-us .text{
      margin-bottom: 50px;
@@ -454,7 +459,7 @@
      align-items: center;
      height:60px;
      border-radius: 50%;
-     background:#4ba4db;
+     background:var(--primary);
      margin-right: 20px;
      cursor: pointer;
      animation:icon-shadow 3s infinite;
@@ -468,7 +473,7 @@
     }
 }
  .contact-us .social-icon i{
-     color:#ffffff;
+     color:var(--white);
 }
  .skill{
      margin-bottom: 100px;
@@ -483,7 +488,7 @@
      height:220px;
      background: #252530;
      border-radius: 50%;
-     border:2px solid #ffffff;
+     border:2px solid var(--white);
      display: flex;
      align-items: center;
     justify-content: center;
@@ -496,8 +501,8 @@
      letter-spacing: 1.5px;
      font-weight: bold;
      color: transparent;
-     -webkit-text-stroke: 1px #ffffff;
-     text-stroke: 1px #ffffff;
+     -webkit-text-stroke: 1px var(--white);
+     text-stroke: 1px var(--white);
 }
 .skill .skill-box p{
     color:gray;
@@ -515,11 +520,11 @@
      height: 5px;
 }
  .skill .owl-theme .owl-dots .owl-dot.active span{
-     background: #4ba4db;
+     background: var(--primary);
      width: 25px;
 }
  .skill .owl-dots .owl-dot:hover span {
-     background: #4ba4db !important;
+     background: var(--primary) !important;
 }
  .skill .owl-theme .owl-nav{
      position: absolute;
@@ -528,7 +533,7 @@
 }
  .skill .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
      background: 0 0;
-     color: #ffffff !important;
+     color: var(--white) !important;
      font-size: 30px !important;
 }
  .skill .owl-theme .owl-nav [class*=owl-]:hover {
@@ -567,7 +572,7 @@
      border-radius: 20px;
 }
  .education .education-box{
-     background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+     background: linear-gradient(159deg, #2d2d3a 0%, var(--light-dark) 100%);
      padding: 30px;
      position: relative;
 }
@@ -585,7 +590,7 @@
      content: "";
      width: 20px;
      height: 20px;
-     background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+     background: linear-gradient(159deg, #2d2d3a 0%, var(--light-dark) 100%);
      transform: rotate(45deg);
 }
  .education .col-right::after{
@@ -597,7 +602,7 @@
      position: absolute;
      top: 14px;
      left: -11px;
-     border: 3px solid #4ba4db;
+     border: 3px solid var(--primary);
      z-index: 10;
 }
  .education .col-left::before{
@@ -607,7 +612,7 @@
      content: "";
      width: 20px;
      height: 20px;
-     background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+     background: linear-gradient(159deg, #2d2d3a 0%, var(--light-dark) 100%);
      transform: rotate(45deg);
 }
  .education .col-left::after{
@@ -619,15 +624,15 @@
      position: absolute;
      top: 14px;
      right: -8px;
-     border: 3px solid #4ba4db;
+     border: 3px solid var(--primary);
      z-index: 10;
 }
  .education .education-box h4{
-     color:#4ba4db;
+     color:var(--primary);
      font-size: 20px;
 }
  .education .education-box h3{
-     color:#ffffff;
+     color:var(--white);
      font-size: 30px;
 }
  .education .education-box p{
@@ -657,7 +662,7 @@
      margin-bottom: 10px;
 }
  .about .about-row ul li i{
-     color: #4ba4db;
+     color: var(--primary);
      font-size: 18px;
      margin-right: 15px;
 }
@@ -679,14 +684,14 @@
     align-items: center;
     width: 100px;
     height: 100px;
-    border:1px solid #ffffff;
+    border:1px solid var(--white);
     margin-bottom: 20px;
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
 }
 
 .services .services-box:hover .service-img{
-    background: #4ba4db;
+    background: var(--primary);
     border:none;
     border-radius: 12px;
 }
@@ -737,7 +742,7 @@ footer .social-icon a{
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    border:1px solid #4ba4db;
+    border:1px solid var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -753,7 +758,7 @@ footer .social-icon a::before{
     left: 0;
     right: 0;
     bottom: 0;
-   background: #4ba4db;
+   background: var(--primary);
    border-radius: 50%;
     opacity: 0;
     transform: scale(0.5);
@@ -768,12 +773,12 @@ footer .social-icon a:hover::before{
 }
 
 footer .social-icon a:hover i{
-    color: #ffffff;
+    color: var(--white);
 }
 
 footer .social-icon a i{
     font-size: 14px;
-    color:#4ba4db;
+    color:var(--primary);
 }
 
 footer p{
