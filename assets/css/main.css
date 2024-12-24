@@ -315,6 +315,7 @@
 /* ============================== Content style ============================== */
  .content {
      overflow: auto;
+     scroll-behavior: smooth;
 }
 .content-header .fa-ellipsis-vertical {
     display: none;

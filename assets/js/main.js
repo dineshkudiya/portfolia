@@ -1,7 +1,8 @@
 $(document).ready(function(){
+
     $(".fa-ellipsis-vertical").click(function(){
       $(".sidebar").toggleClass("sidebar-back");
-      $(".main").toggleClass("main-background-shadow");
+      $("#content").toggleClass("main-background-shadow");
       $(".fa-bars").toggleClass("fa-bars-back");
     });
  
@@ -11,11 +12,16 @@ $(document).ready(function(){
       $(".right").toggleClass("right-back");
       $("ul").toggleClass("opicity-back");
       $(".fa-ellipsis-vertical").toggleClass("fa-ellipsis-vertical-back");
-      $(".main").toggleClass("main-background-shadow");
+      $("#content").toggleClass("main-background-shadow");
       
     });
  
- 
+    // $("#content").on('scroll', function () {
+    //   if ($("#content").scrollTop() > 50) {
+    //     $('.right').toggleClass("right-back");
+    //     console.log("dinesh");
+    //   } 
+    // });
   
 
     $('.owl-carousel').owlCarousel({

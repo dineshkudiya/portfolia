@@ -56,9 +56,13 @@
     color:#ffffff;
     display: block;
 }
-.main.main-background-shadow{
-    background:#000000c9;
-}
+/* #content.main-background-shadow{
+    
+    z-index: 10000;
+   background: red;
+       
+
+} */
 .content-header {
     display: flex;
     z-index: 1000;
